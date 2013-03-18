@@ -19,4 +19,4 @@
 DIR=$(dirname $0)
 
 $DIR/regression/run.sh $@
-$DIR/unit/run.sh $@
+#$DIR/unit/run.sh $@

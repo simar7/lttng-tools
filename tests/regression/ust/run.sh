@@ -26,8 +26,6 @@ source $TESTDIR/utils/runner.sh
 tests=( $DIR/test_event_basic
 	$DIR/test_event_wildcard
 	$DIR/before-after/test_before_after
-	$DIR/high-throughput/test_high_throughput
-	$DIR/low-throughput/test_low_throughput
 	$DIR/multi-session/test_multi_session
 	$DIR/nprocesses/test_nprocesses
 	$DIR/overlap/test_overlap )
