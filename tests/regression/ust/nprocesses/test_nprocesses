@@ -74,8 +74,10 @@ destroy_lttng_session $SESSION_NAME
 
 rm -rf $TRACE_PATH
 
-# Send SIGPIPE to 'silence' bash process status such as "Process as terminated"
-killall -s PIPE -q $TEST_BIN_NAME >/dev/null 2>&1
+while [ -n "$(pidof $TEST_BIN_NAME)" ]; do
+	killall -q $TEST_BIN_NAME >/dev/null 2>&1
+	sleep 0.5
+done
 
 pass "Kill all spawned applications"
 
