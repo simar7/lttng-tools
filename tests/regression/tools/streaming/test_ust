@@ -25,7 +25,7 @@ PID_RELAYD=0
 
 TRACE_PATH=$(mktemp -d)
 
-NUM_TESTS=20
+NUM_TESTS=18
 
 source $TESTDIR/utils/utils.sh
 
