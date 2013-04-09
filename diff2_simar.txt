@@ -1,0 +1,59 @@
+diff --git a/doc/proposals/0001-session-daemon-architecture.txt b/doc/proposals/0001-session-daemon-architecture.txt
+index 411d148..d7cc6c8 100644
+--- a/doc/proposals/0001-session-daemon-architecture.txt
++++ b/doc/proposals/0001-session-daemon-architecture.txt
+@@ -1,7 +1,7 @@
+ RFC - LTTng session daemon architecture
+ 
+ WARNING:
+-  Parts of the proposal are obselete but we keep this version for historical
++  Parts of the proposal are obsolete but we keep this version for historical
+   purposes.
+ 
+ Author: David Goulet <david.goulet@polymtl.ca>
+diff --git a/include/lttng/lttng.h b/include/lttng/lttng.h
+index 8566dea..75d9529 100644
+--- a/include/lttng/lttng.h
++++ b/include/lttng/lttng.h
+@@ -598,13 +598,13 @@ extern int lttng_set_consumer_url(struct lttng_handle *handle,
+ /*
+  * Enable the consumer for a session and domain.
+  */
+-extern LTTNG_DEPRECATED("This call is now obselete.")
++extern LTTNG_DEPRECATED("This call is now obsolete.")
+ int lttng_enable_consumer(struct lttng_handle *handle);
+ 
+ /*
+  * Disable consumer for a session and domain.
+  */
+-extern LTTNG_DEPRECATED("This call is now obselete.")
++extern LTTNG_DEPRECATED("This call is now obsolete.")
+ int lttng_disable_consumer(struct lttng_handle *handle);
+ 
+ /*
+diff --git a/src/bin/lttng/commands/disable_consumer.c b/src/bin/lttng/commands/disable_consumer.c
+index ca649ec..4ecf3db 100644
+--- a/src/bin/lttng/commands/disable_consumer.c
++++ b/src/bin/lttng/commands/disable_consumer.c
+@@ -37,7 +37,7 @@ int cmd_disable_consumer(int argc, const char **argv)
+ {
+ 	int ret;
+ 
+-	MSG("The disable-consumer command is now obselete.");
++	MSG("The disable-consumer command is now obsolete.");
+ 	ret = CMD_WARNING;
+ 
+ 	return ret;
+diff --git a/src/bin/lttng/commands/enable_consumer.c b/src/bin/lttng/commands/enable_consumer.c
+index ecb0b23..8524c8b 100644
+--- a/src/bin/lttng/commands/enable_consumer.c
++++ b/src/bin/lttng/commands/enable_consumer.c
+@@ -37,7 +37,7 @@ int cmd_enable_consumer(int argc, const char **argv)
+ {
+ 	int ret;
+ 
+-	MSG("The enable-consumer command is now obselete.");
++	MSG("The enable-consumer command is now obsolete.");
+ 	ret = CMD_WARNING;
+ 
+ 	return ret;
