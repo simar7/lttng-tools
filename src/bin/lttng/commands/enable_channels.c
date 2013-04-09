@@ -101,7 +101,7 @@ static void usage(FILE *ofp)
 		default_get_kernel_channel_subbuf_size());
 	fprintf(ofp, "                               Needs to be a power of 2 for\n");
         fprintf(ofp, "                               kernel and ust tracers\n");
-	fprintf(ofp, "      --num-subbuf NUM     Number of subbufers\n");
+	fprintf(ofp, "      --num-subbuf NUM     Number of sub-buffers\n");
 	fprintf(ofp, "                               (default: %u)\n",
 		DEFAULT_CHANNEL_SUBBUF_NUM);
 	fprintf(ofp, "                               Needs to be a power of 2 for\n");
